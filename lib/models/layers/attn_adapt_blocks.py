@@ -109,15 +109,14 @@ class CEABlock(nn.Module):
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
         self.norm2 = norm_layer(dim)
         mlp_hidden_dim = int(dim * mlp_ratio)
-        self.mlp = Mlp(in_features=dim, hidden_features=mlp_hidden_dim, act_layer=act_layer, drop=drop)     #from timm.models.layers import Mlp, DropPath, trunc_normal_, lecun_normal_
+        self.mlp = Mlp(in_features=dim, hidden_features=mlp_hidden_dim, act_layer=act_layer, drop=drop)
 
         self.keep_ratio_search = keep_ratio_search
 
-        # ViPT don't have the two adapters
         self.layer_num = layer_num
-        if layer_num in [4,7,10]:
-            self.adap_t = Fusion_adapter(ratio=0.05, dim=dim * 2)  # BA adapter
-            self.adap2_t = Fusion_adapter(ratio=0.05,dim=dim * 2)  # BA adapter
+        if layer_num in [4,7,10]:  
+            self.adap_t = Fusion_adapter(ratio=0.05, dim=dim * 2)
+            self.adap2_t = Fusion_adapter(ratio=0.05,dim=dim * 2)
             self.iner_adap1 = Iner_adapter(dim=dim, ratio=0.05, skip=True)
             self.iner_adap2 = Iner_adapter(dim=dim, ratio=0.05, skip=True)
             self.side_adap = Iner_adapter(dim=dim, ratio=0.05, skip=False)
