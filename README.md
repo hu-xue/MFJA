@@ -79,3 +79,4 @@ and refer you to use [MPR_MSR_Evaluation](https://sites.google.com/view/ahutrack
 - This repo is based on [ViPT](https://github.com/jiawen-zhu/ViPT) which is an exellent work, helps us to quickly implement our ideas.
 - Thanks for the [OSTrack](https://github.com/botaoye/OSTrack) and [PyTracking](https://github.com/visionml/pytracking) library.
 - Thanks for the [SDSTrack](https://github.com/hoqolo/SDSTrack) which is an excellent work.
+- Thanks for the [BAT](https://github.com/SparkTempest/BAT) which is an excellent work.
