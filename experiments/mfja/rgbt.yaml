@@ -49,8 +49,8 @@ TRAIN:
   DROP_PATH_RATE: 0.1
   CE_START_EPOCH: 4  # candidate elimination start epoch 1/15    ########################################
   CE_WARM_EPOCH: 16  # candidate elimination warm up epoch 4/15
-  BATCH_SIZE: 32  # bat is 32
-  EPOCH: 20  # bat is 60
+  BATCH_SIZE: 32 
+  EPOCH: 20  
   GIOU_WEIGHT: 2.0
   L1_WEIGHT: 5.0
   GRAD_CLIP_NORM: 0.1

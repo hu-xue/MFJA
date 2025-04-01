@@ -1,10 +1,10 @@
 # Visible and Thermal Infrared Tracking via Multiple Adapters using Deep Feature Fusion and Enhancement
 
-The official implementation for paper [**Visible and Thermal Infrared Tracking via Multiple Adapters using Deep Feature Fusion and Enhancement**]().
+The official implementation for paper "**Visible and Thermal Infrared Tracking via Multiple Adapters using Deep Feature Fusion and Enhancement**".
 
-## Models
+## Models and Raw Results
 
-[Models &amp; Raw Results](https://drive.google.com/drive/folders/1l8j8Ns8dGyrKrFrmetHPdqKPO0wNrZ1n?usp=sharing) (Google Drive)
+[Models and Raw Results](https://pan.baidu.com/s/1G1nMA1Xlxqz8b-DB_XlwgA?pwd=xg6h) (Baidu Driver: xg6h)
 
 ## Usage
 
@@ -53,7 +53,7 @@ You can also modify paths by these two files:
 
 ### Training
 
-Dowmload the pretrained [foundation model](https://pan.baidu.com/s/1JX7xUlr-XutcsDsOeATU1A?pwd=4lvo) (OSTrack) (Baidu Driver: 4lvo) / [foundation model](https://drive.google.com/file/d/1WSkrdJu3OEBekoRz8qnDpnvEXhdr7Oec/view?usp=sharing) (Google Drive)
+Dowmload the pretrained [foundation model](https://pan.baidu.com/s/1G1nMA1Xlxqz8b-DB_XlwgA?pwd=xg6h) (filename: OSTrack_ep0300.pth.tar) (Baidu Driver: xg6h)
 and put it under ./pretrained/.
 
 ```bash
@@ -73,19 +73,6 @@ bash eval_rgbt.sh
 
 We refer you to use [LasHeR Toolkit](https://github.com/BUGPLEASEOUT/LasHeR) for LasHeR evaluation,
 and refer you to use [MPR_MSR_Evaluation](https://sites.google.com/view/ahutracking001/) for RGBT234 evaluation.
-
-## Citation
-
-Please cite our work if you think it is useful for your research.
-
-```bibtex
-@article{xue2025visible,
-  title={Bi-directional Adapter for Multimodal Tracking},
-  author={Bing Cao, Junliang Guo, Pengfei Zhu, Qinghua Hu},
-  booktitle={AAAI Conference on Artificial Intelligence},
-  year={2024}
-}
-```
 
 ## Acknowledgment
 

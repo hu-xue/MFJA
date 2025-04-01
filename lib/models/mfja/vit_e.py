@@ -58,13 +58,13 @@ class VisionTransformerMFJA(VisionTransformer):
         """
         super().__init__()
         if isinstance(img_size, tuple):
-            self.img_size = img_size  # 图像尺寸
+            self.img_size = img_size 
         else:
             self.img_size = to_2tuple(img_size)
         self.patch_size = patch_size  # patch size
-        self.in_chans = in_chans  # 输入通道数
+        self.in_chans = in_chans  
 
-        self.num_classes = num_classes  # 分类数
+        self.num_classes = num_classes 
         self.num_features = self.embed_dim = embed_dim  # num_features for consistency with other models
         self.num_tokens = 2 if distilled else 1
         norm_layer = norm_layer or partial(nn.LayerNorm, eps=1e-6)
@@ -72,14 +72,9 @@ class VisionTransformerMFJA(VisionTransformer):
 
         self.patch_embed = embed_layer(
             img_size=img_size, patch_size=patch_size, in_chans=in_chans, embed_dim=embed_dim)
-        #self.patch_embed_adapter = embed_layer(
-        #    img_size=img_size, patch_size=patch_size, in_chans=in_chans, embed_dim=embed_dim)
-
-        # num_patches = self.patch_embed.num_patches
 
         self.cls_token = nn.Parameter(torch.zeros(1, 1, embed_dim))
         self.dist_token = nn.Parameter(torch.zeros(1, 1, embed_dim)) if distilled else None
-        # self.pos_embed = nn.Parameter(torch.zeros(1, num_patches + self.num_tokens, embed_dim)) # it's redundant
         self.pos_drop = nn.Dropout(p=drop_rate)
 
         
