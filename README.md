@@ -8,7 +8,7 @@ The official implementation for paper "**[Visible and Thermal Infrared Tracking 
 @article{xue2025feature,
   author  = {Xue, Hu and Zhu, Hao and Ran, Zhidan and Tang, Xianlun and Qi, Guanqiu and Zhu, Zhiqin and Kuok, Sin-Chi and Leung, Henry},
   journal = {IEEE Trans. Circuits Syst. Video Technol.},
-  title   = {Feature Fusion and Enhancement for Lightweight {Visible-Thermal} Infrared Tracking via Multiple Adapters},
+  title   = {Feature Fusion and Enhancement for Lightweight Visible-Thermal Infrared Tracking via Multiple Adapters},
   year    = {2025},
   volume  = {},
   number  = {},
