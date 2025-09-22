@@ -1,7 +1,21 @@
 # Visible and Thermal Infrared Tracking via Multiple Adapters using Deep Feature Fusion and Enhancement
+The official implementation for paper "**[Visible and Thermal Infrared Tracking via Multiple Adapters using Deep Feature Fusion and Enhancement](https://ieeexplore.ieee.org/document/11112670)**".
 
-The official implementation for paper "**Visible and Thermal Infrared Tracking via Multiple Adapters using Deep Feature Fusion and Enhancement**".
+## News
 
+- ⭐ Our paper has been accepted by IEEE Transactions on Circuits and Systems for Video Technology (TCSVT) 2025 for early access. Please cite our paper if you find our work useful in your research.
+```
+@article{xue2025feature,
+  author  = {Xue, Hu and Zhu, Hao and Ran, Zhidan and Tang, Xianlun and Qi, Guanqiu and Zhu, Zhiqin and Kuok, Sin-Chi and Leung, Henry},
+  journal = {IEEE Trans. Circuits Syst. Video Technol.},
+  title   = {Feature Fusion and Enhancement for Lightweight {Visible-Thermal} Infrared Tracking via Multiple Adapters},
+  year    = {2025},
+  volume  = {},
+  number  = {},
+  pages   = {1-1},
+  doi     = {10.1109/TCSVT.2025.3595632}
+}
+```
 ## Models and Raw Results
 
 [Models and Raw Results](https://pan.baidu.com/s/1G1nMA1Xlxqz8b-DB_XlwgA?pwd=xg6h) (Baidu Driver: xg6h)
